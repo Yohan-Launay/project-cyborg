@@ -1,0 +1,566 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: "terminator";
+    src: url(../polices/terminator.otf);
+}
+
+header {
+  overflow: hidden;
+}
+
+main {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: white;
+}
+
+#resume {
+  background: linear-gradient(rgb(0, 0, 0), #0d1017);
+  padding: 5% 0;
+}
+
+#film {
+  background-color: #0d1017;
+}
+
+.wrapper {
+  width: 1140px;
+  margin: auto;
+}
+
+/************* button **********/
+
+
+
+
+
+/************** nav ******/
+
+  
+
+  .navbar img {
+      display: block;
+      width: 50%;
+      background-color: transparent;
+      text-align: center;
+  }
+
+  
+  .navbar {
+    z-index: 2;
+    width:80px;
+    position:fixed;
+    top:0px;
+    left:0px;
+    bottom:0px;
+    background:var(--navbar-background-color);
+    box-shadow: rgba(12,43, 30, 0.2) 0 4px 14px;
+    transition: .2s;
+  }
+  
+  .navbar:hover {
+    width:250px;
+  }
+  
+  .navbar-menu {
+    list-style: none;
+    padding:0;
+    margin:0;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    height:100%;
+  }
+  
+  .navbar-item {
+    width: 100%;
+    transition: background-color var(--navbar-transition-speed);
+  }
+  
+  .navbar-item:hover {
+    background-color:var(--navbar-item-hovered-color);
+  }
+  
+  
+  .navbar-link {
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+    height:50px;
+    width:100%;
+    text-decoration: none;
+  }
+
+  a.active {
+    text-align: center;
+    width: 100%;
+    background-color: rgb(231, 231, 231);
+    border-radius: 50px;
+  }
+  
+  .navbar-icon {
+    text-align: center;
+    font-size: 25px;
+    min-width: 25px;
+    margin: 0 20px;
+    color:var(--navbar-icon-color);
+    transition:var(--navbar-transition-speed);
+    padding: auto;
+  }
+
+  
+  .navbar-item:last-child {
+    margin-top:auto;
+  }
+  
+  .navbar-item:hover .navbar-icon {
+    color:var(--primary-color);
+  }
+  
+  .navbar-title {
+    font-weight: bolder;
+    color:var(--navbar-text-color);
+    padding-left: 20px;
+  }
+  
+  .navbar:not(:hover) .navbar-title {
+    display:none;
+  }
+  
+  
+  
+  .navbar:hover .logo .navbar-icon {
+    transform:rotate(180deg);
+  }
+
+  button {
+    background-color: transparent;
+    border: none;
+  }
+
+  
+  
+  
+/************* header vidéo image******/
+
+
+
+.header-video {
+	width: 100vw;
+	height: 100vh; 
+  }
+  
+  .header-video > .bg-video {
+	width: 100%;
+	height: 100%;
+  }
+  
+
+  .header-video > .text {
+	position: absolute;
+	inset: 0;
+	display: grid;
+	place-items: center;
+	background-color: rgb(0, 0, 0);
+	color: #fff;
+	font-weight: 900;
+	font-size: 125px;
+	font-family: sans-serif;
+	mix-blend-mode: multiply;
+	user-select: none;
+  height: 100%;
+  font-family: 'terminator';
+  }
+
+
+  .img-header > img {
+    position: absolute;
+    bottom: 250px;
+    left: 45%;
+    width: 10%;
+    opacity: 0.33;
+  }
+  
+
+/************* video nav *****/
+
+.video-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 500;
+  background-color: rgba(31, 31, 31, 0.452);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s;
+}
+
+.video-container .close {
+  position: absolute;
+  top: 10%;
+  right: 25px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.video-container video {
+  width: 90%;
+  max-width: 1000px;
+  transform: scale(0);
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+  outline: none;
+  transition: all 0.3s;
+}
+
+.video-container.show {
+  pointer-events: all;
+  opacity: 1;
+}
+
+.video-container.show video {
+  transform: scale(1) ;
+}
+
+/** scroll top*/
+
+
+#scroll_to_top a:hover {
+    background-color: var(--bleu);
+    transition: 0.5s;
+}
+
+/******** all ********/
+ul li {
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+    
+    border-radius: 100px;
+    margin: 5px;
+}
+
+
+h2 {
+    text-align: center;
+    font-size: 45px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h2, h3 {
+    font-family: 'terminator';
+    padding: 50px 0;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+
+
+/******** section résumé *****/
+
+
+
+    .cyborg-flex {
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;  
+    }
+
+    .cyborg-flex img {
+        display: block;
+        width: 30%;
+    }
+
+    .cyborg {
+        width: 50%;
+        
+    }
+
+/************* film *******/
+
+.flex-film {
+  display: flex;
+  justify-content: space-around;
+  position: sticky;
+}
+
+  .affiche {
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .affiche img {
+    padding: 25px 0;
+  }
+
+#film {
+  padding: 50px 0;
+}
+#film img {
+  width: 80%;
+  margin: auto;
+}
+  #film div {
+    position: sticky;
+    top: 25vh;
+  }
+
+  
+
+/******** people *************/
+
+
+#people .font-noir .dark-vador, .terminator img{
+    transform: scaleX(-1);
+}
+
+
+.font-noir {
+  padding-top: 5%; 
+  color: white;
+}
+
+.perso {
+    display: flex;
+    padding: 5% 0;
+    justify-content: space-around;
+    align-items: center;
+}
+.influ {
+  width: 50%;
+  padding: 5px;
+  z-index: 100;
+
+}
+/******* dark vador ****/
+    .flex-vador {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+.text-dark-vador {
+    width: 20%;
+    margin: 10% 5%;
+    width: 50%;
+}
+
+.dark-vador {
+  display: flex;
+  width: 80%;
+  align-items: end;
+  justify-content: space-around;
+}
+  
+
+/****** terminator ******/
+.flex-terminator {
+  display: flex;
+}
+.text-terminator {
+    position: absolute;
+    right: 7%;
+    width: 20%;
+    margin: 5% 0;
+    color: white;
+}
+
+.terminator img {
+  width: 100%;
+}
+
+.terminator {
+  background-color: #070508;
+}
+  #people .font-noir .dark-vador {
+    z-index: 1;
+  }
+  .luke {
+    width: 20%;
+    position: relative;
+    top: 260px;
+    left: -217px;
+    z-index: 4;
+    transform: rotate(-20deg);
+    transition: 0.5s;
+  }
+  img.luke:hover{
+    top:82px;
+    left: -300px;
+    transition: 0.5s;
+  }
+
+
+
+/********** sabre laser ****/
+.sabre-laser {
+  position: relative;
+  right: -268px;
+  top: -48px;
+  z-index: -1;
+  transform: rotate(-46deg);
+  background-color: white;
+  min-width: 15px;
+  height: 545px;
+  border-radius: 10px 10px 0 0;
+  -webkit-box-shadow:0px 0px 19px 11px rgba(232,7,7,1);
+  -moz-box-shadow: 0px 0px 19px 11px rgba(232,7,7,1);
+  box-shadow: 0px 0px 19px 11px rgba(232,7,7,1);
+  animation: sabre 10s 0s infinite;
+}
+
+
+@keyframes sabre {
+  0% {
+    opacity: 0;
+  }
+  2% {
+    opacity: 0.8;
+  }
+  3% {
+    opacity: 0.7;
+  }
+  5% {
+    opacity: 0.9;
+  }
+  7% {
+    opacity: 0.7;
+  }
+  8% {
+    opacity: 0.8;
+  }
+  10% {
+    opacity: 0.7;
+  }
+  15% {
+    opacity: 0.9;
+  }
+  19% {
+    opacity: 0.7;
+  }
+  8% {
+    opacity: 0.8;
+  }
+  10% {
+    opacity: 0.7;
+  }
+  19% {
+    opacity: 0.9;
+  }
+  20% {
+    opacity: 0.7;
+  }
+  22% {
+    opacity: 0.8;
+  }
+  23% {
+    opacity: 0.7;
+  }
+  28% {
+    opacity: 0.9;
+  }
+  30% {
+    opacity: 0.7;
+  }
+  33% {
+    opacity: 0.9;
+  }
+  37% {
+    opacity: 0.7;
+  }
+  38% {
+    opacity: 0.9;
+  }
+  41% {
+    opacity: 0.7;
+  }
+  55% {
+    opacity: 0.9;
+  }
+  56% {
+    opacity: 0.7;
+  }
+  57% {
+    opacity: 0.9;
+  }
+  59% {
+    opacity: 0.7;
+  }
+  61% {
+    opacity: 0.9;
+  }
+  67% {
+    opacity: 0.7;
+  }
+  69% {
+    opacity: 0.7;
+  }
+  71% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 0.7;
+  }
+}
+
+
+/************ robotcop ******/
+
+.flex-robotcop {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.robotcop {
+  background: linear-gradient(#131922, #070508);
+}
+
+.robotcop-position {
+  position: relative;
+  left: 10%;
+  width: 70%;
+}
+
+/************** footer ***/
+
+footer{
+  background-color: #415a7a;
+  display: flex;
+  justify-content: space-around;
+  padding: 100px 0;
+}
+
+footer a {
+  color: white;
+  font-size: 25px;
+}
+
+footer a:hover {
+  color: #1b2634;
+  transition: 0.5s;
+}
+
+footer p {
+  font-weight: bolder;
+}

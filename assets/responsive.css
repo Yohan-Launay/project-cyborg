@@ -1,0 +1,37 @@
+@media only screen and (max-width:1024px) {
+    .navbar {
+      top:auto;
+      width:100%;
+      bottom:0px;
+    }
+  
+    .navbar:hover {
+      width:100%;
+    }
+  
+    .navbar-menu {
+      flex-direction: row;
+    }
+  
+    .logo {
+      display:none;
+    }
+  
+    main {
+      margin-left:0;
+      margin-bottom:5rem;
+    }
+  
+    .navbar:hover .navbar-title {
+      display:none;
+    }
+  
+    .navbar-icon {
+      min-width:auto;
+      margin:0;
+    }
+  
+    .navbar-link {
+      justify-content: center;
+    }
+  }

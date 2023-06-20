@@ -1,0 +1,11 @@
+
+  section .section-desc {
+      transform: translateY(100px);
+      opacity: 0;
+      transition: 2s ease-out;
+  }
+  
+  .section-desc.faded-in {
+      transform: translateY(0);
+      opacity: 1;
+  }

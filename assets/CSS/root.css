@@ -1,0 +1,10 @@
+:root {
+    --navbar-background-color: #9c9c9ce0;
+    --navbar-item-hovered-color:rgb(218, 218, 218);
+    --navbar-separator-color:#ececec;
+    --navbar-icon-color:#000000;
+    --navbar-text-color:black;
+    --navbar-transition-speed: .4s;
+    --primary-color:#7C4D5C;
+    --navbar-logo-background-color:#e2dfe4;
+}

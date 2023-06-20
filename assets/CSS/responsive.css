@@ -1,0 +1,222 @@
+@media (max-width:1200px) {
+
+
+  .wrapper {
+    width: 700px;
+    margin: auto;
+  }
+
+  h1.text {
+    font-size: 50px;
+  }
+
+  img {
+    margin: 10px;
+  }
+
+
+    /********* nav bar *****/
+    .navbar {
+      top:auto;
+      width:100%;
+      bottom:0px;
+      display: flex;
+      justify-content: center;
+      z-index: 9999;
+    }
+  
+    .navbar:hover {
+      width:100%;
+    }
+  
+    .navbar-menu {
+      flex-direction: row;
+    }
+
+    ul li {
+      margin: 0 5px;
+    }
+
+    a {
+      padding: 15px;
+    }
+  
+    .logo {
+      display:none;
+    }
+
+    button {
+      padding: 20px;
+    }
+  
+
+  
+    .navbar:hover .navbar-title {
+      display:none;
+    }
+  
+    .navbar-icon {
+      min-width:auto;
+      margin:0;
+    }
+  
+    .navbar-link {
+      justify-content: center;
+    }
+
+
+    /******** header video *******/
+
+    .header-video {
+      height: 95vh;
+    }
+
+    .header-video > .text {
+      font-size: 100px;
+    }
+
+    .img-header > img {
+      width: 20%;
+      left: 40%;
+    }
+    /**** resume **************/
+
+    .cyborg-flex {
+      width:90%;
+      margin: auto;
+      padding: 50px 0;
+    }
+
+    .cyborg-flex img {
+      width: 50%;
+    }
+    /**************** film ********/
+
+    .affiche, .princ-films {
+      width: 40%;
+    }
+
+    /********** people *****/
+    /* dark vador*/
+  
+    .flex-vador {
+      width: 100%;
+      flex-direction: column-reverse;
+      align-items: center;
+      padding: 0;
+      margin: 0;
+    }
+    
+
+    .text-dark-vador {
+      width: 80%;
+      padding: 0;
+      margin-top: 50px;
+    }
+
+    .sabre-laser {
+      width: 15px;
+      position: relative;
+      top: -55px;
+      right: -259px;
+      min-height: 300px;
+      min-width: 15px;
+    }
+
+    
+    
+    .dark-vador {
+      z-index: 2;
+      height: 50%;
+    }
+      .dark-vador img {
+        padding: 0;
+
+        margin: 0;
+      }
+    /** robotcop**/
+    .flex-robotcop {
+      display: block;
+      padding: 50px 0;
+    }
+    .flex-robotcop img {
+      width: 100%;
+      bottom: 0;
+    }
+
+    /** terminator **/
+
+    .flex-terminator {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+
+    .text-terminator {
+      position: static;
+      width: 80%;
+    }
+
+    .terminator {
+      background-color: #070508;
+    }
+    
+  }
+
+
+   @media (max-width:768px){
+
+    .wrapper {
+      width: 350px;
+      margin: auto;
+    }
+    .header-video > .text {
+      font-size: 50px;
+    }
+
+    .flex-robotcop img {
+      width:100%;
+  }
+    
+    h2 {
+      font-size: 30px;
+    }
+
+    /*********** resume *******/
+    .cyborg {
+      width: auto;
+    }
+    .cyborg-flex img {
+      width: 100%;
+    }
+    .cyborg-flex {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /********** films ******/
+
+    .flex-film {
+      flex-direction: column;
+      align-items: center;
+    }
+    #film div {
+      position: static;
+    }
+    .affiche, .princ-films {
+      width: 100%;
+    }
+
+    /********** people ***********/
+
+    .perso {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .influ {
+      width: 100%;
+    }
+
+  }
+
+    
